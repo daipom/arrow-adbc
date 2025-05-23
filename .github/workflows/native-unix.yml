@@ -19,8 +19,6 @@ name: Native Libraries (Unix)
 
 on:
   pull_request:
-    branches:
-      - main
     paths:
       - "c/**"
       - "ci/**"
