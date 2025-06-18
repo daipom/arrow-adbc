@@ -53,7 +53,7 @@ jobs:
           go-version: "${{ env.GO_VERSION }}"
       - uses: r-lib/actions/setup-r@bd49c52ffe281809afa6f0fecbf37483c5dd0b93  # v2
         with:
-          r-version: release
+          r-version: '4.5.0'
           use-public-rspm: true
 
       - name: Set PKG_CONFIG_PATH on MacOS
