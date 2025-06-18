@@ -19,24 +19,7 @@ name: R (standard)
 
 # Runs on PRs that touch the R packages directly
 on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - "r/**"
-      - ".github/workflows/r-standard.yml"
-      - ".github/workflows/r-check.yml"
-
-  push:
-    branches:
-      - main
-    paths:
-      - "c/**"
-      - "go/adbc/driver/**"
-      - "go/adbc/pkg/**"
-      - "r/**"
-      - ".github/workflows/r-basic.yml"
-      - ".github/workflows/r-check.yml"
+  - push
 
 concurrency:
   group: ${{ github.repository }}-${{ github.ref }}-${{ github.workflow }}
